@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD</title>
+    <style>
+        body{
+            background-color: rgb(247, 233, 237);
+        }
+        #para2:hover{
+            color: gold;
+            text-shadow:2px 2px 4px rgb(255, 255, 255);
+        }
+        #para5:active{
+            color:red;
+        }
+        #full{
+            height: 585px;
+            width: 466px;
+            margin-left: 450px;
+            margin-right: 450px;
+            border:2px solid hsl(179deg,100%,0%);
+            background-color: rgb(6, 116, 116) ;
+            box-shadow: 3px 3px yellow;
+        }
+        #poly1{
+            clip-path:polygon(0 0, 100% 0, 90% 100%, 0 70%);
+            background-color:#0e1111;
+            width:75%;
+            height:30%;
+            float:left;
+        }
+        #para1{
+            color:azure;
+            margin-top:12%;
+            margin-left:10%;
+            font-size: 200%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 0%;
+        }
+        #para2{
+            color:yellow;
+            margin-left:10%;
+            font-size: 280%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 0%;
+        }
+        #c1{
+            clip-path:circle(4% at 80% 7%);
+            background-color:yellow;
+            width:100%;
+            height:100%;
+            float:left;
+        }
+        #c2{
+            clip-path:circle(4% at 30% 5%);
+            width: 100%;
+            height: 100%;
+            background-color:yellow;
+        }
+        #c3{
+            clip-path:circle(25% at 100% 0);
+            background-color:yellow;
+            width:25%;
+            height:30%;
+            float:right;
+        }
+        #c4{
+            clip-path:circle(23% at 10% 18%);
+            width: 8%;
+            height: 200px;
+            background-color:yellow;
+            float:left;
+        }
+        #para3{
+            padding-top: 60px;
+            padding-left: 60px;
+            height: 200px;
+            width: 32%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            word-spacing: 2px;
+            letter-spacing: 0.4px;
+        }
+        #para4{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80%;
+        }
+        #c5{
+            clip-path:circle(51% at 70% 50%);
+            width: 60%;
+            height: 300px;
+            background-image:url('furn.jpg');
+            background-size: cover;
+            float:right;
+            animation-name: chng;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+        }
+        #c6{
+            clip-path:circle(6% at 99% 13%);
+            width: 100%;
+            height: 200px;
+            background-color:yellow;
+        }
+        #c7{
+            clip-path:circle(30% at 0 100%);
+            background-color:#0e1111;
+            width:40px;
+            height:157px;
+            float:left;
+        }
+        #poly2{
+            clip-path:polygon(0 90%,0 100%,80% 100%,80% 90%);
+            background-color:#0e1111;
+            width:150px;
+            height:109px;
+            float:right;
+        }
+        #poly4{
+            clip-path:polygon(342px 40px,355px 45px,333px 150px,320px 145px);
+            width:100%;
+            height:150px;
+            background-color: yellow;
+        }
+        #poly5{
+            clip-path:polygon(0px 0px,465px 60px,465px 175px,0px 175px);
+            width:100%;
+            height:157px;
+            background-color: yellow;
+        }
+        #para5{
+            padding-top: 60px;
+            width:60%;
+            height:105px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+        }
+        @keyframes chng{
+            0%   {background-image: url(i1.jpg); background-size: cover;}
+            25%  {background-image: url(i2.jpeg); background-size: cover;}
+            50%  {background-image: url(i3.jpeg); background-size: cover;}
+            100% {background-image: url(fun.jpeg); background-size: cover;}
+        }
+    </style>
+</head>
+<body>
+    <div id="full">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <div id="poly1">
+            <p id="para1">EXCLUSIVE</p>
+            <p id="para2">FURNITURE</p>
+            <div id="c1"></div>
+            <div id="c2"></div>
+        </div>
+        <div id="c3"></div> 
+        <div id="c4"></div>
+        <div id="poly4"></div>
+        <div id="c5">
+            <div id="c6"></div>
+        </div>
+        <div id="para3">NEW PRODUCT 
+            <p id="para4">Designs inspired by the new generation with a classic touch.</p>
+            <p>Making home a happy place.</p>
+        </div>
+        <div id="poly5">
+            <div id="c7"></div>
+            <div id="poly2"></div>
+            <p id="para5">CONTACT US<br>123-456-7890<br>123 Indha Theru., Indha Ooru<marquee width="225" height="45" direction="left" style="line-height: 3;color: violet;">100% Genuine Products</marquee></p>
+        </div>
+    </div>
+</body>
+</html>
